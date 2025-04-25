@@ -1,0 +1,37 @@
+extends ../templates/layout
+
+block main
+  - var boxIconItems = [{ title: "Cambio de aceite y filtros", text: "Programá el cambio de aceite y filtros antes del inicio de los meses de alta temperatura o luego del reemplazo de combustible.", icon:"https://storage.pardot.com/735253/17327205257GFe2OIA/PIC_cilindro_aceite_icono_silueta_verde.png"},{ title: "Rutina semana de prueba", text: "Encendé semanalmente el equipo con cargas crecientes hasta alcanzar la temperatura de uso por no menos de 30 minutos.", icon:"https://storage.pardot.com/735253/1732722778eWWPCKCW/PIC_calendario_reloj_icono_silueta_verde.png"},{ title: "Ensayo con carga real", text: "Ejecutá una prueba de carga real de la red por más de una hora y luego, realizá el cambio en el filtro de combustible.", icon:"https://storage.pardot.com/735253/1732722778G1Sdb3DT/PIC_rayo_circulo_icono_silueta_verde.png"}]
+  - var boxIconItems2= [{ title: "Limpieza de radiadores", text: "Hidrolavá los radiadores para prevenir problemas de sobrecalentamiento.", icon:"https://storage.pardot.com/735253/1732720443RU9HoPTg/PIC_gota_icono_silueta_verde.png"},{ title: "Renovación de combustible", text: "Verificá que el combustible en los tanques no tenga más de seis meses de antigüedad.", icon:"https://storage.pardot.com/735253/1732722778MUszgLh2/PIC_estacion_de_gas_icono_silueta_verde.png"}]
+
+  +separator()
+  +paragraph("Hola {{Recipient.FirstName}}")
+  +separator("8")
+  +paragraph(`Con el verano acercándose, es importante que asegures el óptimo funcionamiento de tus equipos para prepararlos ante los posibles cortes energéticos. Recordá que las siguientes recomendaciones son <strong>clave para el cuidado de tu grupo electrógeno:</strong>`)
+  +separator("20")
+  +threeBoxTextIcon(boxIconItems)
+  +separator("12")
+  +twoBoxTextIcon(boxIconItems2)
+  +separator("24")
+  +paragraph("Estas acciones maximizan el rendimiento de tu equipo y previenen imprevistos. ¿Tenés dudas sobre cómo realizarlas? ")
+  +separator("12")
+  tr
+    td(style='background-color: #F2F2F2;' valign='middle')
+      table(align='center' bgcolor='#F2F2F2' border='0' cellpadding='0' cellspacing='0' style='background-color: #F2F2F2;' valign='middle')
+        tbody
+          tr
+            td(colspan='3' height='16') &nbsp;
+          tr
+          +paragraph("<strong>Nuestro equipo técnico está disponible para asesorarte</strong> en su implementación. Hacé clic para recibir asesoramiento telefónico.")
+          tr
+            td(colspan='3' height='0') &nbsp;
+  tr
+    td(style='background-color: #F2F2F2;' valign='middle')
+      table(align='center' bgcolor='#F2F2F2' border='0' cellpadding='0' cellspacing='0' style='background-color: #F2F2F2;' valign='middle')
+        tbody
+          tr
+            +callToAction("Quiero que me contacten", "#")
+          tr
+            td(colspan='3' height='16') &nbsp;
+            
+

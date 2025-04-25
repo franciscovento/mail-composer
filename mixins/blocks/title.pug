@@ -1,0 +1,18 @@
+//- Font sizes lg | md | sm
+//- Font weight normal | bold
+//- Align of titles center | left | right
+//- Example: +title('Title', 'md', 'center')
+- var titleFontSize = { lg: "28px", md: "26px", sm: "24px", xs: "22px" }
+- var titleFontWeight = { normal: "400", bold: "700" }
+- var titleLineHeight = { lg: "32px", md: "30px", sm: "28px", xs: "24px" }
+mixin title(title, size="md", weight="bold", align="left")
+  // Title
+  +appTable()
+    tbody
+      tr
+        +colSeparator()
+        td
+          p(style=`color: #2D2D2D; font-family: Arial, Helvetica, sans-serif; font-size: ${titleFontSize[size]}; font-weight:${titleFontWeight[weight]}; line-height: ${titleLineHeight[size]}; margin: 0;`)
+            font(color='#2D2D2D' face='Arial, Helvetica, sans-serif')
+              | #{title}
+        +colSeparator()

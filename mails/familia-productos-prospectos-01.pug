@@ -1,0 +1,18 @@
+extends ../templates/layout
+
+block main
+  +separator("16")
+  +paragraph("{{Recipient.FirstName}}, conocé el diferencial de nuestro servicio de alquileres:", "lg")
+  +separator("28")
+  each item in familia_de_productos_01_list
+    +iconText(item.text, item.icon, {color: "#000000", weight: 400, iconSize: 36})
+    +separator("20")
+  +callToAction("Quiero saber más", "https://www.sullairargentina.com/alquiler/?utm_source=pardot ")
+  +separator("32")  
+  +title("Conocé los testimonios de dos proyectos en los que participamos cerca tuyo:", "sm")
+  +separator("20")  
+  +twoArticlesBlog(blogArticles1)
+  +separator("16")
+  include ../includes/footer-green.pug
+
+

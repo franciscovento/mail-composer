@@ -1,0 +1,17 @@
+//- Types of titles lg | md | sm
+//- Font weight normal | bold
+//- Example: +title('Title', 'md', 'normal')
+- var paragraphFontSize = { lg: "20px", md: "16px", sm: "14px" }
+- var paragraphFontWeight = { normal: "400", bold: "700" }
+- var paragraphLineHeight = { lg: "30px", md: "24px", sm: "21px" }
+mixin paragraph(text, size="md", weight="normal", align="left")
+  // Paragraph
+  +appTable(style="", align=align)
+    tbody
+      tr
+        td(width='24') &nbsp;
+        td
+          p(style=`color: #2D2D2D; font-family: Arial, Helvetica, sans-serif; font-weight: ${paragraphFontWeight[weight]}; font-size: ${paragraphFontSize[size]}; line-height: ${paragraphLineHeight[size]}; margin: 0;`)
+            font(color='#2D2D2D' face='Arial, Helvetica, sans-serif')
+              != text
+        td(width='24') &nbsp;

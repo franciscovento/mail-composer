@@ -1,0 +1,27 @@
+include ../mixins/mixins
+include ../includes/variables
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="x-apple-disable-message-reformatting")
+    meta(name="format-detection", content="telephone=no")
+    meta(name="format-detection", content="date=no")
+    meta(name="format-detection", content="address=no")
+    meta(name="format-detection", content="email=no")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Sullair Argentina
+  body
+    block header 
+      include ../includes/header.pug
+      
+    block main 
+      tr 
+        td 
+          p write your content here...
+
+    block footer
+      include ../includes/footer-dark.pug
+
+    block legales
+     include ../includes/legales.pug
+      

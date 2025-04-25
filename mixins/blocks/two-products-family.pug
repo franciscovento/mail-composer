@@ -1,0 +1,22 @@
+mixin twoProductsFamily(items)
+  // Two Products Family
+  table(width='600' border='0' align='center' cellpadding='0' cellspacing='0' style='width: 600px;' )
+    tbody
+      tr
+        +colSeparator('24')
+        td(width='552' height='100%')
+          table( width='552' border='0' cellpadding='0' cellspacing='0' height='100%')
+            tbody
+              tr
+                // POST 1
+                +productItemLink(items[0].title, items[0].link, "268")
+                +colSeparator('16')
+                // POST 2
+                if items[1]
+                  +productItemLink(items[1].title, items[1].link, "268")
+                else
+                  td
+                    p(style='line-height: 0; width: 286px;')
+                      | &nbsp;
+        +colSeparator('24')
+  

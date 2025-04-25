@@ -1,0 +1,20 @@
+mixin threeCardImageLinks(data)
+  // Three Card Image Links
+  table(border="0" cellpadding='0' cellspacing='0') 
+    tbody
+        +colSeparator("24")
+        +cardImageLink(
+          data[0].image,
+          data[0].link
+          )
+        +colSeparator("16")
+        +cardImageLink(
+          data[1].image,
+          data[1].link
+          )
+        +colSeparator("16")
+        +cardImageLink(
+          data[2].image,
+          data[2].link
+          )
+        +colSeparator("24")

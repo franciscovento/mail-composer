@@ -1,0 +1,16 @@
+mixin twoArticlesBlog(items)
+  // Two Articles Blog
+  table(border='0' cellpadding='0' cellspacing='0' style='width: 600px;' width='600')
+    tbody
+      tr
+        +colSeparator('24')
+        td(width='552' height='100%')
+          table( width='552' border='0' cellpadding='0' cellspacing='0' height='100%')
+            tbody
+              tr
+                // POST 1
+                +cardBlogArticle(items[0].text, items[0].link, items[0].image, "268")
+                +colSeparator('16')
+                // POST 2
+                +cardBlogArticle(items[1].text, items[1].link, items[1].image, "268")
+        +colSeparator('24')

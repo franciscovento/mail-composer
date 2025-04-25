@@ -1,0 +1,11 @@
+//- Example Item -> [{title, text, icon}]
+mixin twoBoxTextIcon(items)
+  // Three Box Text Icon
+  table(cellspacing="0" align="center" cellpadding="0" border="0") 
+    tbody 
+      tr 
+        +colSeparator()
+        +boxTextIcon(items[0].title, items[0].text, items[0].icon, "276")
+        +colSeparator("12")
+        +boxTextIcon(items[1].title, items[1].text, items[1].icon, "276")
+        +colSeparator()

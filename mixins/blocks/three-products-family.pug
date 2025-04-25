@@ -1,0 +1,19 @@
+mixin threeProductsFamily(items)
+  // Two Articles Blog
+  table(border='0' cellpadding='0' cellspacing='0' style='width: 600px;' width='600')
+    tbody
+      tr
+        +colSeparator('24')
+        td(width='552' height='100%')
+          table( width='552' border='0' cellpadding='0' cellspacing='0' height='100%')
+            tbody
+              tr
+                // POST 1
+                +productItemLink(items[0].title, items[0].link, "173")
+                +colSeparator('16')
+                // POST 2
+                +productItemLink(items[1].title, items[1].link, "173")
+                +colSeparator('16')
+                // POST 3
+                +productItemLink(items[2].title, items[2].link, "173")
+        +colSeparator('24')

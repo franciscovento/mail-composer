@@ -1,0 +1,22 @@
+extends ../templates/layout
+
+block main
+  +separator("18")
+  +paragraph("¡Hola, {{Recipient.FirstName}}!")
+  +separator("20")
+  +title("¿Ya conocés todos los beneficios de alquilar equipos de nuestra flota?", "xs", "normal")
+  +separator("20")
+  +textList(["Utilizás el equipo adecuado cada vez que lo necesitás.", "Disminuís la inversión en activos.", "Cumplís los cronogramas con productividad, seguridad y eficiencia.", "Evitás los costos de mantenimiento."])
+  +separator("20")
+  +paragraph("Ventajas de alquilar con Sullair Argentina:", "lg")
+  +separator("20")
+  +sullairAdvantages()
+  +separator("20")
+  +paragraph("Además, ofrecemos una familia de productos completa que cubre cada una de tus necesidades, todo con disponibilidad inmediata en nuestra sucursal de Neuquén.")
+  +separator("20")
+  +callToAction("Quiero que me contacten", "")
+  +separator("20")
+  +hr()
+  +separator("20")
+  +blogArticle("Éxito en el sector minero:", "La confiabilidad de nuestros equipos y nuestra velocidad de respuesta fue clave para este gran proyecto", "https://storage.pardot.com/735253/1729189611QDss9VQn/IMG_tractor_amarillo_camion.png", "https://blog.sullairargentina.com/articulo/167/confiabilidad-y-rapida-respuesta-la-formula-de-sullair-para-el-sector-minero")
+  +separator("20")

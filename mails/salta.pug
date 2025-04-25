@@ -1,0 +1,33 @@
+extends ../templates/layout
+
+block main
+  - var firstArrayImages = [{ image: "https://www2.sullairargentina.com/l/735253/2024-10-17/48w4b1/735253/1729179893SvKAKRRP/IMG_label_aire.png", link: "https://www.sullairargentina.com/equipos/compresores-de-aire/" },{ image: "https://storage.pardot.com/735253/1729179893Q1zW4Zzu/IMG_label_energia.png", link: "https://www.sullairargentina.com/equipos/grupos-electrogenos/" },{ image: "https://storage.pardot.com/735253/1729179894FBC0zwqr/IMG_label_tierra.png", link: "https://www.sullairargentina.com/equipos/movimiento-de-tierra/" }]
+
+  - var secondArrayImages = [{ image: "https://storage.pardot.com/735253/1729179894Cw0G1e2U/IMG_label_manipuladores.png", link: "https://www.sullairargentina.com/equipos/manipuladores/" },{ image: "https://storage.pardot.com/735253/1729179894zvLeH9ue/IMG_label_plataformas.png", link: "https://www.sullairargentina.com/equipos/plataformas-para-trabajo-en-altura/" },{ image: "https://storage.pardot.com/735253/1729179893NZalLWRR/IMG_label_iluminacion.png", link: "https://www.sullairargentina.com/equipos/torres-de-iluminacion/" }]
+
+  +separator()
+  +title("{{Recipient.FirstName}}, ¡descubrí la variedad de equipos que tenemos disponibles cerca tuyo!", "sm", "400")
+  +separator()
+  +paragraph("Ofrecemos una amplia familia de productos en alquiler y venta para acompañarte en cada etapa de tu crecimiento.")
+  +separator("20")
+  +threeCardImageLinks(familias_1)
+  +separator("16")
+  +threeCardImageLinks(familias_2)
+  +separator()
+  +paragraph("Somos el aliado ideal para tus proyectos, brindándote flexibilidad, disponibilidad inmediata y el respaldo técnico que necesitás para superar cualquier desafío.")
+  +paragraph("En nuestra sucursal de Salta contamos con un equipo de expertos listos para brindarte el soporte que necesitás.")
+  +separator("20")
+  +callToAction("Contactanos", "https://www.sullairargentina.com/campanas/equipos-venta-y-alquiler-salta/?utm_source=pardot")
+  +separator("20")
+  +backgroundTextItems(saltaBenefits)
+  +separator("20")
+  +title("Alquileres y Ventas")
+  +separator()
+  +textLinkIcon("Av. John. F. Kennedy, Ruta Nac. 52, KM 2,5", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
+  +separator()
+  +textLinkIcon("[+54 381] 451 9989", "tel:+54 381 451 9989", "https://storage.pardot.com/735253/17291786732tlGt705/call.png")
+  +separator("20")
+  +hr()
+  +separator("20")
+  +blogArticle("Éxito en el sector minero:", "La confiabilidad de nuestros equipos y nuestra velocidad de respuesta fue clave para este gran proyecto", "https://storage.pardot.com/735253/1729189611QDss9VQn/IMG_tractor_amarillo_camion.png", "https://blog.sullairargentina.com/articulo/167/confiabilidad-y-rapida-respuesta-la-formula-de-sullair-para-el-sector-minero?utm_source=pardot" )
+  +separator("20")

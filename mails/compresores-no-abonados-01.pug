@@ -1,0 +1,37 @@
+extends ../templates/layout
+
+block main
+  - var boxIconItems = [{ title: "Limpieza de radiadores", text: "Hidrolavá los radiadores para prevenir problemas de sobrecalentamiento.", icon:"https://storage.pardot.com/735253/1732720443RU9HoPTg/PIC_gota_icono_silueta_verde.png"},{ title: "Cambio de aceite y filtros", text: "Asegurá el reemplazo de aceite y filtro para mantener su rendimiento.", icon:"https://storage.pardot.com/735253/17327205257GFe2OIA/PIC_cilindro_aceite_icono_silueta_verde.png"},{ title: "Ventilación de Sala", text: "Asegurá la correcta ventilación de la sala de máquinas.", icon:"https://storage.pardot.com/735253/1732720628CclTAPcz/PIC_aire_icono_silueta_verde.png"}]
+
+  +separator()
+  +paragraph("Hola {{Recipient.FirstName}}")
+  +separator("8")
+  +paragraph(`El verano está cada vez más cerca, y con él, la probabilidad de interrupciones en el suministro eléctrico. Por eso, <strong>es muy importante que sigas estos consejos</strong> para cuidar y prolongar la vida útil de tu compresor de aire:`)
+  +separator("20")
+  +threeBoxTextIcon(boxIconItems)
+  +separator("28")
+  +paragraph("Estas recomendaciones te permitirán maximizar el rendimiento de tu compresor de aire y prevenir imprevistos. Si necesitás asesoramiento adicional,<strong> nuestro equipo técnico está disponible para ayudarte</strong> en la implementación de estas medidas.")
+  +separator("16")
+  // Content
+  +appTable("background-color: #D3D3D3;", "center", "#D3D3D3" )
+    tbody 
+      tr 
+        td
+          table(style="margin-top: 16px; margin-bottom: 16px;")
+            tbody 
+              tr 
+                td 
+                  +paragraph("¿Ya le hiciste el mantenimiento anual a tu equipo? Ingresá acá para solicitar un mantenimiento preventivo de verano.")
+  +separator("16")
+  +appTable()
+    tbody 
+      tr 
+        td 
+          table(align='center' bgcolor='#F2F2F2' border='0' cellpadding='0' cellspacing='0' style='background-color: #F2F2F2;' valign='middle')
+            tbody
+              tr
+              +callToAction("Cotizar mantenimiento", "#")
+              tr
+                td(colspan='3' height='16') &nbsp;
+            
+

@@ -1,0 +1,31 @@
+mixin blogArticle(title, text, image, link)
+  //Blog Article
+  table(border='0' cellpadding='0' cellspacing='0' width="600")
+    tbody
+      tr
+        +colSeparator("24")
+        td
+          a(target='_blank' href=link style='text-decoration: none;')
+            img(src=image alt='' width='270' height='auto' style="width: 270px;")
+        +colSeparator("20")
+        td
+          table(border='0' cellpadding='0' cellspacing='0' width="262" style="width: 262px;")
+              tr 
+                +text(title, "20px", "400")
+              +separator('6')
+              tr 
+                +text(text, "14px")
+              +separator('9')
+              tr
+                td
+                  a(target='_blank' href=link style='text-decoration: none;')
+                    table
+                      tbody
+                        tr
+                          td
+                            p(style='color: #2D2D2D; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; margin: 0;')
+                              font(color='#2D2D2D' face='Arial, Helvetica, sans-serif')
+                                | Continuar leyendo
+                          td
+                            img(src='https://storage.pardot.com/735253/1729178565ppcPfNBL/fi_arrow_right.png' alt='')
+        td(width='24') &nbsp;

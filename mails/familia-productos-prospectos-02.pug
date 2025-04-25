@@ -1,0 +1,19 @@
+extends ../templates/layout
+
+block main
+  +separator("16")
+  +title("¿Conocés los beneficios de alquilar con Sullair Argentina?", "md")
+  +separator("16")
+  +paragraph("Nuestro servicio está diseñado para brindarte la seguridad, confiabilidad y productividad que necesitás en tus proyectos.", "lg")
+  +separator("32")
+  +threeBoxTextIcon([familiaBenefits[0], familiaBenefits[1], familiaBenefits[2]])
+  +separator("12")
+  +threeBoxTextIcon([familiaBenefits[3], familiaBenefits[4], familiaBenefits[5]])
+  +separator("32")
+  +paragraph("Alquilá directamente en nuestra sucursal de Neuquén.", "lg", "normal", "center")
+  +separator("24")
+  +callToAction("Conocé más", "")
+  +separator("16")
+  include ../includes/footer-green.pug
+
+

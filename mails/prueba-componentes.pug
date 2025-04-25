@@ -1,0 +1,32 @@
+extends ../templates/layout
+
+block main 
+  - var firstArrayImages = [{ image: "https://www2.sullairargentina.com/l/735253/2024-10-17/48w4b1/735253/1729179893SvKAKRRP/IMG_label_aire.png", link: "https://www.sullairargentina.com/equipos/compresores-de-aire/" },{ image: "https://storage.pardot.com/735253/1729179893Q1zW4Zzu/IMG_label_energia.png", link: "https://www.sullairargentina.com/equipos/grupos-electrogenos/" },{ image: "https://storage.pardot.com/735253/1729179894FBC0zwqr/IMG_label_tierra.png", link: "https://www.sullairargentina.com/equipos/movimiento-de-tierra/" }]
+
+  - var secondArrayImages = [{ image: "https://storage.pardot.com/735253/1729179894Cw0G1e2U/IMG_label_manipuladores.png", link: "https://www.sullairargentina.com/equipos/manipuladores/" },{ image: "https://storage.pardot.com/735253/1729179894zvLeH9ue/IMG_label_plataformas.png", link: "https://www.sullairargentina.com/equipos/plataformas-para-trabajo-en-altura/" },{ image: "https://storage.pardot.com/735253/1729179893NZalLWRR/IMG_label_iluminacion.png", link: "https://www.sullairargentina.com/equipos/torres-de-iluminacion/" }]
+
+  +separator("18")
+  +title("¿Ya conocés nuestra oferta de equipos en alquiler?", "lg", "400")
+  +separator()
+  +paragraph("Te invitamos a descubrir la variedad de equipos que tenemos disponibles cerca tuyo.")
+  +separator("20")
+  +threeCardImageLinks(firstArrayImages)
+  +separator("16")
+  +threeCardImageLinks(secondArrayImages)
+  +separator()
+  +paragraph("Somos el aliado ideal para tus proyectos. Nuestros equipos están diseñados para brindar seguridad, confiabilidad y productividad.")
+  +separator("20")
+  +paragraph("¿Tenés alguna consulta o querés que te contactemos?")
+  +paragraph("Nuestro equipo local en Neuquén está listo para asesorarte.")
+  +separator("20")
+  +callToAction("Conocer más sobre alquileres", "")
+  +separator("16")
+  +imageSection("https://storage.pardot.com/735253/1730398504QIH4Apeq/IMG_Crosseling_01.png")
+  +separator("20")
+  +title("Neuquén")
+  +separator()
+  +textLinkIcon("Industriales Neuqueninos 2920", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
+  +separator()
+  +textLinkIcon("[+54 299] 478 2500", "tel:[+54 299] 478 2500", "https://storage.pardot.com/735253/17291786732tlGt705/call.png")
+  +separator("20")
+  
