@@ -1,0 +1,24 @@
+mixin cardBlogArticle(image, title, description, link, cardSize="276")
+  // Blog Article
+  table(border='0' align='center' cellpadding='0' cellspacing='0' width=cardSize style=`width: ${cardSize}px;`)
+    tbody
+      tr 
+        td  
+          table(border='0' align='center' cellpadding='0' cellspacing='0' width=cardSize style=`width: ${cardSize}px;`)
+            tbody
+              tr
+                td
+                  img(src=image, alt=title, style=`width:${cardSize}px;` width=cardSize height="auto" )
+      tr
+        td(colspan='3' height='16' style=`padding: 0; margin: 0; line-height: 0px; font-size: 0px;` ) &nbsp; 
+      tr 
+        +text(title, "18px", "bold")
+      tr 
+        +text(description)
+      tr 
+        td(colspan='3' height='8' style=`padding: 0; margin: 0; line-height: 0px; font-size: 0px;` ) &nbsp; 
+      tr(height='100%' style='vertical-align: bottom;')
+        td
+          p(style='color: #2d2d2d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; line-height: 1.2; margin: 0;')
+            a(href=link target='_blank' style='color: #2d2d2d;  text-decoration: none;') Ver más
+            |  &rarr;

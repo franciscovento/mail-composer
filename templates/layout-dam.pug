@@ -1,0 +1,32 @@
+include ../mixins/mixins
+include ../includes/variables
+
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="x-apple-disable-message-reformatting")
+    meta(name="format-detection", content="telephone=no")
+    meta(name="format-detection", content="date=no")
+    meta(name="format-detection", content="address=no")
+    meta(name="format-detection", content="email=no")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Sullair Argentina
+  body
+    +imageSection("https://www2.sullairargentina.com/l/735253/2025-05-05/49hn5k/735253/1746464270DEryWrQk/PIC_banner_verder_formas.png")
+    +separator("32")
+    table(align='center' border='0' cellpadding='0' cellspacing='0' style='width: 600px;' width='600')
+      tbody
+        tr
+          +colSeparator()
+          td
+            img(src="https://www2.sullairargentina.com/l/735253/2025-05-05/49hn5g/735253/1746463794Z82SqUQo/IMG_sullair_go_logo.png" width='600' style="width: 142px;" height='auto' alt=alt)
+          +colSeparator()
+    +separator("32")
+    block main 
+      tr 
+        td 
+          p write your content here...
+    +separator("48")
+    +imageSection("https://www2.sullairargentina.com/l/735253/2025-05-05/49hn5k/735253/1746464270DEryWrQk/PIC_banner_verder_formas.png")
+
+      
