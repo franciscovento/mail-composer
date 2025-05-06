@@ -1,19 +1,33 @@
-mixin threeArticlesBlog()
+mixin threeArticlesBlog(items)
   // Three Articles Blog
-  table(border='0' cellpadding='0' cellspacing='0' style='width: 600px;' width='600')
-    tbody
+  table(border='0' align='center' cellpadding='0' cellspacing='0' style='width: 600px;' width='600')
+    tbody 
       tr
         +colSeparator('24')
-        td(width='552' height='100%')
-          table( width='552' border='0' cellpadding='0' cellspacing='0' height='100%')
-            tbody
-              tr
-                // POST 1
-                +cardBlogArticle("Generamos energía de fuentes renovables.", "https://www.sullairargentina.com/energia/", "https://storage.pardot.com/735253/1730740385U8czzwGw/31321941027_e855cee1cb_o.jpg")
-                +colSeparator('16')
-                // POST 2
-                +cardBlogArticle('Desarrollo sustentable: cómo medimos, reducimos y compensamos nuestra...', "https://www.sullairargentina.com/energia/", "https://storage.pardot.com/735253/1727193919w2TJ4Ze7/0Y5A2641_LOW_03.jpg")
-                +colSeparator('16')
-                // POST 3
-                +cardBlogArticle('Soluciones llave en mano para generar nitrógeno in situ: innovación y eficienci...', "https://www.sullairargentina.com/energia/", "https://storage.pardot.com/735253/1725918194EOU7lONN/V03_BLOG_INFORME_Huella_de_Carbono_02.png")
+        td 
+          +cardBlogArticle(items[0].image, items[0].title, items[0].description, items[0].link, "173")
+        +colSeparator('16')
+        td 
+          +cardBlogArticle(items[1].image, items[1].title, items[1].description, items[1].link, "173")
+        +colSeparator('16')
+        td 
+          +cardBlogArticle(items[2].image, items[2].title, items[2].description, items[2].link, "173")
         +colSeparator('24')
+
+  //- table(border='0' cellpadding='0' cellspacing='0' style='width: 600px;' width='600')
+  //-   tbody
+  //-     tr
+  //-       +colSeparator('24')
+  //-       td(width='552' height='100%')
+  //-         table( width='552' border='0' cellpadding='0' cellspacing='0' height='100%')
+  //-           tbody
+  //-             tr
+  //-               // POST 1
+  //-               +cardBlogArticle("Generamos energía de fuentes renovables.", "https://www.sullairargentina.com/energia/", "https://storage.pardot.com/735253/1730740385U8czzwGw/31321941027_e855cee1cb_o.jpg")
+  //-               +colSeparator('16')
+  //-               // POST 2
+  //-               +cardBlogArticle('Desarrollo sustentable: cómo medimos, reducimos y compensamos nuestra...', "https://www.sullairargentina.com/energia/", "https://storage.pardot.com/735253/1727193919w2TJ4Ze7/0Y5A2641_LOW_03.jpg")
+  //-               +colSeparator('16')
+  //-               // POST 3
+  //-               +cardBlogArticle('Soluciones llave en mano para generar nitrógeno in situ: innovación y eficienci...', "https://www.sullairargentina.com/energia/", "https://storage.pardot.com/735253/1725918194EOU7lONN/V03_BLOG_INFORME_Huella_de_Carbono_02.png")
+  //-       +colSeparator('24')
