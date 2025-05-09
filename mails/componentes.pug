@@ -10,120 +10,124 @@ html(lang="es")
     meta(name="format-detection", content="address=no")
     meta(name="format-detection", content="email=no")
   body 
-    +title("Componentes", "lg")
-    +separator("40")
-    +title("1. Componente title", "xs")
-    +separator("16")
-    +title("2. Componente párrafo", "xs")
-    +paragraph("Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.")
-    +separator("16")
-    +title("3. Componente section image", "xs")
-    +separator("16")
-    +imageSection("https://www2.sullairargentina.com/l/735253/2025-05-05/49hn5k/735253/1746464270DEryWrQk/PIC_banner_verder_formas.png")
-    +separator("16")
-    +title("4. Componente text link icon", "xs")
-    +separator("8")
-    +textLinkIcon("Industriales Neuqueninos 2920", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
-    +separator("8")
-    +textLinkIcon("Industriales Neuqueninos 2920", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
-    +separator("8")
-    +textLinkIcon("Industriales Neuqueninos 2920", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
-    +separator("16")
-    +title("5. Componente call to action", "xs")
-    +separator("8")
-    +callToAction("Conocer más sobre alquileres", "")
-    +separator("8")
-    +title("6. Componente divider", "xs")
-    +separator("8")
-    +hr()
-    +separator("8")
-    +title("7. Componente blog article", "xs")
-    +separator("8")
-    +blogArticle("Éxito en el sector minero:", "La confiabilidad de nuestros equipos y nuestra velocidad de respuesta fue clave para este gran proyecto", "https://storage.pardot.com/735253/1729189611QDss9VQn/IMG_tractor_amarillo_camion.png", "https://blog.sullairargentina.com/articulo/167/confiabilidad-y-rapida-respuesta-la-formula-de-sullair-para-el-sector-minero")
-    +separator("16")
-    +title("8. Componente text list", "xs")
-    +separator("8")
-    +textList(["Utilizás el equipo adecuado cada vez que lo necesitás.", "Disminuís la inversión en activos.", "Cumplís los cronogramas con productividad, seguridad y eficiencia.", "Evitás los costos de mantenimiento."])
-    +separator("16")
-    +title("9. Componente two articles blog", "xs")
-    +separator("8")
-    +twoArticlesBlog([
-    {
-      image: "https://storage.pardot.com/735253/1739979841JA6n09Ea/IMG_tractor_amarillo_semillas.png",
-      text: "Mirá cómo nuestras soluciones para la actividad agropecuaria ayudaron a tener mayor eficiencia.",
-      description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://blog.sullairargentina.com/articulo/143/soluciones-creativas-para-la-actividad-agropecuaria/?utm_source=pardot"
-    },
-     {
-      image: "https://www2.sullairargentina.com/l/735253/2025-02-12/497l7j/735253/17393407820M3Qej2A/IMG_expo_agro_fondo_negro.png",
-      text: "Expo Agro 2025 (11 al 14/03, San Nicolás): Acercate al stand 301 a conocer este equipo y mucho más.",
-      description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.expoagro.com.ar/?utm_source=pardot"
-    }
-  ])
-    +separator("16")
-    +title("10. Componente three articles blog", "xs")
-    +separator("8")
-    +threeArticlesBlog([
-    {
-      image: "https://storage.pardot.com/735253/1739979841JA6n09Ea/IMG_tractor_amarillo_semillas.png",
-      text: "Mirá cómo nuestras soluciones para la actividad agropecuaria ayudaron a tener mayor eficiencia.",
-      description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://blog.sullairargentina.com/articulo/143/soluciones-creativas-para-la-actividad-agropecuaria/?utm_source=pardot"
-    },
-     {
-      image: "https://www2.sullairargentina.com/l/735253/2025-02-12/497l7j/735253/17393407820M3Qej2A/IMG_expo_agro_fondo_negro.png",
-      text: "Expo Agro 2025 (11 al 14/03, San Nicolás): Acercate al stand 301 a conocer este equipo y mucho más.",
-      description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.expoagro.com.ar/?utm_source=pardot"
-    },
-    {
-      image: "https://www2.sullairargentina.com/l/735253/2025-02-12/497l7j/735253/17393407820M3Qej2A/IMG_expo_agro_fondo_negro.png",
-      text: "Expo Agro 2025 (11 al 14/03, San Nicolás): Acercate al stand 301 a conocer este equipo y mucho más.",
-      description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.expoagro.com.ar/?utm_source=pardot"
-    }
-  ])
-  +separator("16")
-  +title("11. Componente three box text icon", "xs")
-  +separator("8")
-  +threeBoxTextIcon(boxTexIconItems)
-  +separator("16")
-  +title("11. Componente two box text icon", "xs")
-  +separator("8")
-  +twoBoxTextIcon(boxTexIconItems)
-  +separator("16")
-  +title("12. Componente three card image links", "xs")
-  +separator("8")
-  +threeCardImageLinks(familias_1)
-  +separator("16")
-  +title("13. Componente two card image links", "xs")
-  +separator("8")
-  +threeProductsFamily([{title: "Compresores de aire", link: "https://www.sullairargentina.com/equipos/compresores-de-aire/"},{title: "Grupos electrógenos", link: "https://www.sullairargentina.com/equipos/grupos-electrogenos/"},{title: "Movimiento de tierra", link: "https://www.sullairargentina.com/equipos/movimiento-de-tierra/"}])
-  +separator("16")
-  +title("14. Componente two products family", "xs")
-  +separator("8")
-  +twoProductsFamily([
-  {
-    title: "Eléctricos estacionarios",
-    link: "https://www.sullairargentina.com/equipos/compresores-de-aire/electricos-estacionarios/?utm_source=pardot",
-  },
-  {
-    title: "Generadores de Nitrógeno",
-    link: "https://www.sullairargentina.com/equipos/compresores-de-aire/generadores-de-nitrogeno/?utm_source=pardot",
-  },
-])
-+separator("16")
-+title("15. Separator", "xs")
-+separator("60")
-+hr()
-+separator("16")
-+title("16. Componente sullair advantages", "xs")
-+separator("8")
-+sullairAdvantages()
+    table(width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 600px; border-collapse: collapse; border: none; margin: auto; padding: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+      tbody 
+        tr 
+          td 
+            +title("Componentes", "lg")
+            +separator("40")
+            +title("1. Componente title", "xs")
+            +separator("16")
+            +title("2. Componente párrafo", "xs")
+            +paragraph("Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.")
+            +separator("16")
+            +title("3. Componente section image", "xs")
+            +separator("16")
+            +imageSection("https://www2.sullairargentina.com/l/735253/2025-05-05/49hn5k/735253/1746464270DEryWrQk/PIC_banner_verder_formas.png")
+            +separator("16")
+            +title("4. Componente text link icon", "xs")
+            +separator("8")
+            +textLinkIcon("Industriales Neuqueninos 2920", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
+            +separator("8")
+            +textLinkIcon("Industriales Neuqueninos 2920", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
+            +separator("8")
+            +textLinkIcon("Industriales Neuqueninos 2920", "https://maps.app.goo.gl/9W7XFR4MgzaYdnqm9", "https://storage.pardot.com/735253/1729178708z450B35o/location.png")
+            +separator("16")
+            +title("5. Componente call to action", "xs")
+            +separator("8")
+            +callToAction("Conocer más sobre alquileres", "")
+            +separator("8")
+            +title("6. Componente divider", "xs")
+            +separator("8")
+            +hr()
+            +separator("8")
+            +title("7. Componente blog article", "xs")
+            +separator("8")
+            +blogArticle("Éxito en el sector minero:", "La confiabilidad de nuestros equipos y nuestra velocidad de respuesta fue clave para este gran proyecto", "https://storage.pardot.com/735253/1729189611QDss9VQn/IMG_tractor_amarillo_camion.png", "https://blog.sullairargentina.com/articulo/167/confiabilidad-y-rapida-respuesta-la-formula-de-sullair-para-el-sector-minero")
+            +separator("16")
+            +title("8. Componente text list", "xs")
+            +separator("8")
+            +textList(["Utilizás el equipo adecuado cada vez que lo necesitás.", "Disminuís la inversión en activos.", "Cumplís los cronogramas con productividad, seguridad y eficiencia.", "Evitás los costos de mantenimiento."])
+            +separator("16")
+            +title("9. Componente two articles blog", "xs")
+            +separator("8")
+            +twoArticlesBlog([
+            {
+            image: "https://storage.pardot.com/735253/1739979841JA6n09Ea/IMG_tractor_amarillo_semillas.png",
+            text: "Mirá cómo nuestras soluciones para la actividad agropecuaria ayudaron a tener mayor eficiencia.",
+            description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            link: "https://blog.sullairargentina.com/articulo/143/soluciones-creativas-para-la-actividad-agropecuaria/?utm_source=pardot"
+            },
+            {
+            image: "https://www2.sullairargentina.com/l/735253/2025-02-12/497l7j/735253/17393407820M3Qej2A/IMG_expo_agro_fondo_negro.png",
+            text: "Expo Agro 2025 (11 al 14/03, San Nicolás): Acercate al stand 301 a conocer este equipo y mucho más.",
+            description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            link: "https://www.expoagro.com.ar/?utm_source=pardot"
+            }
+            ])
+            +separator("16")
+            +title("10. Componente three articles blog", "xs")
+            +separator("8")
+            +threeArticlesBlog([
+            {
+            image: "https://storage.pardot.com/735253/1739979841JA6n09Ea/IMG_tractor_amarillo_semillas.png",
+            text: "Mirá cómo nuestras soluciones para la actividad agropecuaria ayudaron a tener mayor eficiencia.",
+            description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            link: "https://blog.sullairargentina.com/articulo/143/soluciones-creativas-para-la-actividad-agropecuaria/?utm_source=pardot"
+            },
+            {
+            image: "https://www2.sullairargentina.com/l/735253/2025-02-12/497l7j/735253/17393407820M3Qej2A/IMG_expo_agro_fondo_negro.png",
+            text: "Expo Agro 2025 (11 al 14/03, San Nicolás): Acercate al stand 301 a conocer este equipo y mucho más.",
+            description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            link: "https://www.expoagro.com.ar/?utm_source=pardot"
+            },
+            {
+            image: "https://www2.sullairargentina.com/l/735253/2025-02-12/497l7j/735253/17393407820M3Qej2A/IMG_expo_agro_fondo_negro.png",
+            text: "Expo Agro 2025 (11 al 14/03, San Nicolás): Acercate al stand 301 a conocer este equipo y mucho más.",
+            description: "Mira esta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            link: "https://www.expoagro.com.ar/?utm_source=pardot"
+            }
+            ])
+            +separator("16")
+            +title("11. Componente three box text icon", "xs")
+            +separator("8")
+            +threeBoxTextIcon(boxTexIconItems)
+            +separator("16")
+            +title("11. Componente two box text icon", "xs")
+            +separator("8")
+            +twoBoxTextIcon(boxTexIconItems)
+            +separator("16")
+            +title("12. Componente three card image links", "xs")
+            +separator("8")
+            +threeCardImageLinks(familias_1)
+            +separator("16")
+            +title("13. Componente two card image links", "xs")
+            +separator("8")
+            +threeProductsFamily([{title: "Compresores de aire", link: "https://www.sullairargentina.com/equipos/compresores-de-aire/"},{title: "Grupos electrógenos", link: "https://www.sullairargentina.com/equipos/grupos-electrogenos/"},{title: "Movimiento de tierra", link: "https://www.sullairargentina.com/equipos/movimiento-de-tierra/"}])
+            +separator("16")
+            +title("14. Componente two products family", "xs")
+            +separator("8")
+            +twoProductsFamily([
+            {
+            title: "Eléctricos estacionarios",
+            link: "https://www.sullairargentina.com/equipos/compresores-de-aire/electricos-estacionarios/?utm_source=pardot",
+            },
+            {
+            title: "Generadores de Nitrógeno",
+            link: "https://www.sullairargentina.com/equipos/compresores-de-aire/generadores-de-nitrogeno/?utm_source=pardot",
+            },
+            ])
+            +separator("16")
+            +title("15. Separator", "xs")
+            +separator("60")
+            +hr()
+            +separator("16")
+            +title("16. Componente sullair advantages", "xs")
+            +separator("8")
+            +sullairAdvantages()
 
 
 
 
 
-    
+
